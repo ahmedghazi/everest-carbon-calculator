@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.98 8.2">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        stroke: #00441c;
+        stroke-miterlimit: 10;
+        stroke-width: 0.61px;
+      }
+
+      .cls-4 {
+        fill: #00441c;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="10.98" height="8.2"/>
+    </clipPath>
+  </defs>
+  <title>Fichier 2</title>
+  <g id="Calque_2" data-name="Calque 2">
+    <g id="Calque_1-2" data-name="Calque 1">
+      <g class="cls-2">
+        <path class="cls-3" d="M9.56.31H2.44a1,1,0,0,0-1,1V5.39"/>
+        <path class="cls-3" d="M1.35,7.9H8.47a1,1,0,0,0,1-1V2.82"/>
+      </g>
+      <polygon class="cls-4" points="8.01 4.1 10.98 4.1 9.58 1.84 8.01 4.1"/>
+      <polygon class="cls-4" points="0 4.1 1.57 6.36 2.97 4.1 0 4.1"/>
+    </g>
+  </g>
+</svg>

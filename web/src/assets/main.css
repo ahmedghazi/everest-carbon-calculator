@@ -1,0 +1,42 @@
+@import "./base.css";
+@import "./typography.css";
+
+#app {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal; */
+}
+
+.container {
+  max-width: var(--container-w);
+  margin: auto;
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+section {
+  display: grid;
+  align-items: center;
+  min-height: calc(var(--vh) * 100);
+  padding: var(--header-h) 0 var(--footer-h);
+}
+section .inner {
+  /* display: ; */
+}
+
+.box {
+  border-radius: var(--radius);
+  border: var(--border);
+}
+
+.counter-value {
+  line-height: 1;
+}

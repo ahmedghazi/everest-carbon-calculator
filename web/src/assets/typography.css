@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "RMMono-Regular";
+  src: url("./fonts/RMMono-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+html {
+  font-size: 12px;
+}
+@media all and (min-width: 1080px) {
+  html {
+    font-size: 16px;
+  }
+}
+/* @media all and (min-width: 1600px) {
+  html {
+    font-size: 1.33vw;
+  }
+} */
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--text-md);
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* Paragraph */
+.text p,
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: underline;
+}
+
+pre {
+  background: #cfcfcf;
+  line-height: 1.5;
+  margin-bottom: 1.5em;
+  overflow: auto;
+  padding: 0.75em 1.5em;
+}
+
+button {
+  color: inherit;
+}
