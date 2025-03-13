@@ -1,6 +1,11 @@
 @import "./base.css";
 @import "./typography.css";
 
+html,
+body {
+  scroll-snap-type: y mandatory;
+}
+
 #app {
   /* max-width: 1280px;
   margin: 0 auto;
@@ -27,9 +32,8 @@ section {
   align-items: center;
   min-height: calc(var(--vh) * 100);
   padding: var(--header-h) 0 var(--footer-h);
-}
-section .inner {
-  /* display: ; */
+  position: relative;
+  scroll-snap-align: start;
 }
 
 .box {
@@ -39,4 +43,21 @@ section .inner {
 
 .counter-value {
   line-height: 1;
+}
+
+.b-b {
+  border-bottom: var(--border);
+  border-color: currentColor;
+}
+.b-t {
+  border-top: var(--border);
+  border-color: currentColor;
+}
+.b-r {
+  border-right: var(--border);
+  border-color: currentColor;
+}
+.b-l {
+  border-left: var(--border);
+  border-color: currentColor;
 }

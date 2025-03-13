@@ -1,42 +1,77 @@
+<script setup lang="ts">
+import { ref, watch } from "vue";
+import gsap from "gsap";
+const modal = ref<HTMLDivElement | null>(null);
+
+const props = defineProps<{
+  open: boolean;
+}>();
+defineEmits(["_toggle"]);
+
+watch(
+  () => props.open,
+  (isOpen) => {
+    // console.log(`modal is ${isOpen}`);
+    if (isOpen) {
+      gsap.to(modal.value, {
+        y: 0,
+        opacity: 1,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+    } else {
+      gsap.to(modal.value, {
+        y: 20,
+        opacity: 0,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+    }
+  }
+);
+</script>
+
 <template>
   <div ref="modal" class="modal" :class="{ 'is-open': open }">
     <div class="container">
       <div class="header">
-        <button class="close" @click="$emit('_toggle')">
-          <svg
-            id="5888b3d3-90e4-48a7-8e21-47682fa05fc1"
-            data-name="Calque 1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="23.21"
-            height="23.21"
-            viewBox="0 0 23.21 23.21">
-            <rect
-              x="14.5"
-              width="1.92"
-              height="30.91"
-              fill="white"
-              transform="translate(-10.25 11.61) rotate(-45)" />
-            <rect
-              y="14.5"
-              width="30.91"
-              height="1.92"
-              fill="white"
-              transform="translate(-10.25 11.61) rotate(-45)" />
-          </svg>
-        </button>
+        <div class="inner b-b">
+          <button class="close" @click="$emit('_toggle')">
+            <svg
+              id="5888b3d3-90e4-48a7-8e21-47682fa05fc1"
+              data-name="Calque 1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="23.21"
+              height="23.21"
+              viewBox="0 0 23.21 23.21">
+              <rect
+                x="14.5"
+                width="1.92"
+                height="30.91"
+                fill="white"
+                transform="translate(-10.25 11.61) rotate(-45)" />
+              <rect
+                y="14.5"
+                width="30.91"
+                height="1.92"
+                fill="white"
+                transform="translate(-10.25 11.61) rotate(-45)" />
+            </svg>
+          </button>
+        </div>
       </div>
       <div class="body">
-        <div class="foreword">
+        <div class="foreword b-b">
           <div class="grid md:grid-cols-2 gap-md">
             <div class="item">
-              <h2>MÉTHODE DE CALCUL</h2>
+              <h2 class="b-b">MÉTHODE DE CALCUL</h2>
               <p class="text-lg">
                 Voici les principales étapes et hypothèses de notre approche
                 simplifiée
               </p>
             </div>
             <div class="item">
-              <h2>HYPOTHÈSES DE BASE</h2>
+              <h2 class="b-b">HYPOTHÈSES DE BASE</h2>
               <p>
                 Périmètre de calcul basé sur le GHG Protocol Product Standard,
                 norme internatio- nale pour le calcul des gaz à effet de serre
@@ -51,10 +86,10 @@
           </div>
         </div>
         <div class="items">
-          <div class="grid md:grid-cols-4 gap-sm">
+          <div class="grid md:grid-cols-4">
             <div class="item">
               <div class="index">01.</div>
-              <h2>SALLE OU POSTE DE TRAVAIL</h2>
+              <h2 class="b-b">SALLE OU POSTE DE TRAVAIL</h2>
               <p>Consommation électrique : Équipements utilisés sur site.</p>
               <p>
                 Émissions liées aux immobilisations : Prise en compte de
@@ -62,18 +97,18 @@
                 vie.
               </p>
             </div>
-            <div class="item">
+            <div class="item b-l">
               <div class="index">02.</div>
-              <h2>PERSONNEL</h2>
+              <h2 class="b-b">PERSONNEL</h2>
               <p>
                 Transports domicile-travail : Calcul des émissions basées sur
                 les déplacements des collaborateurs.
               </p>
               <p>Repas : Émissions associées à un repas moyen.</p>
             </div>
-            <div class="item">
+            <div class="item b-l">
               <div class="index">03.</div>
-              <h2>FRAIS TECHNIQUES</h2>
+              <h2 class="b-b">FRAIS TECHNIQUES</h2>
               <p>
                 Production et archivage : Émissions liées à la consommation
                 électrique des équipements pour des services tels que PAD, DCP,
@@ -84,9 +119,9 @@
                 la Base Empreinte de l'ADEME.
               </p>
             </div>
-            <div class="item">
+            <div class="item b-l">
               <div class="index">04.</div>
-              <h2>AUTRES</h2>
+              <h2 class="b-b">AUTRES</h2>
               <p>
                 Émissions indirectes : Achats de services, gestion des déchets,
                 consommation électrique des espaces communs, chauffage, etc.
@@ -100,49 +135,19 @@
         </div>
       </div>
       <div class="footer">
-        Cette méthode garantit une vision détaillée et précise de l'impact
-        carbone de nos activités, tout en permettant une approche actionnable
-        pour réduire ces émissions.
+        <div class="inner b-t b-b">
+          <p>
+            Cette méthode garantit une vision détaillée et précise de l'impact
+            carbone de nos activités, tout en permettant une approche
+            actionnable pour réduire ces émissions.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-import { ref, watch } from "vue";
-import gsap from "gsap";
-const modal = ref<HTMLDivElement | null>(null);
-
-const props = defineProps<{
-  open: boolean;
-}>();
-defineEmits(["_toggle"]);
-
-//:class="{ block: open, hidden: !open }"
-watch(
-  () => props.open,
-  (isOpen) => {
-    console.log(`modal is ${isOpen}`);
-    if (isOpen) {
-      gsap.to(modal.value, {
-        y: 0,
-        opacity: 1,
-        duration: 0.4,
-        ease: "power3.out",
-      });
-    } else {
-      gsap.to(modal.value, {
-        y: 100,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power3.out",
-      });
-    }
-  }
-);
-</script>
-
-<style scoped>
+<style scoped lang="scss">
 .modal {
   position: fixed;
   width: 100%;
@@ -155,48 +160,67 @@ watch(
   opacity: 0;
   transform: translate(0px, 100px);
   font-family: var(--font-secondary);
+  &.is-open {
+    pointer-events: all;
+  }
 }
-.modal.is-open {
-  pointer-events: all;
-}
+
 .container {
   background-color: var(--color-primary);
   margin: 0 auto;
   height: 100%;
-}
-.header,
-.footer,
-.item,
-.item h2 {
-  border-color: white;
-}
-.header {
-  border-bottom: var(--border);
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  .body {
+    flex: 2;
+  }
 }
-.close {
-  /* padding: 0 var(--space-sm); */
+p {
+  /* font-size: 12px; */
+  &.text-lg {
+    /* font-size: 20pt; */
+  }
 }
-.footer {
-  border-top: var(--border);
-}
+
 .header,
 .body,
 .footer {
-  padding: var(--space-sm);
+  padding: 0 var(--space-sm);
 }
+
+.header {
+  .inner {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--space-sm) 0;
+  }
+}
+
+.footer {
+  padding-bottom: var(--space-sm);
+  .inner {
+    padding: var(--space-sm) 0;
+  }
+}
+
 .foreword {
-  margin-bottom: var(--space-lg);
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
-.item:not(:first-child) {
-  border-left: var(--border);
-  padding-left: var(--space-sm);
+.items {
+  padding: 0 0 var(--space-sm) 0;
 }
-.item h2 {
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
-  border-bottom: var(--border);
-  border-color: white;
+.item {
+  padding-right: var(--space-sm);
+
+  &:not(:first-child) {
+    padding-left: var(--space-sm);
+  }
+  h2 {
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+    font-family: var(--font-primary);
+  }
 }
 </style>

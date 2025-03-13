@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const props = defineProps<{
+  layout: "row" | "col";
+}>();
+</script>
+
 <template>
   <ul
     class="units flex"
@@ -11,14 +17,4 @@
   </ul>
 </template>
 
-<script setup lang="ts">
-const props = defineProps<{
-  layout: "row" | "col";
-}>();
-</script>
-
-<style scoped>
-ul {
-  list-style: none;
-}
-</style>
+<style scoped></style>

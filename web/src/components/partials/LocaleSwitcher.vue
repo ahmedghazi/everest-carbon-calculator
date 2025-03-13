@@ -26,7 +26,7 @@ function _setLocale(val: string) {
   </ul>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 ul {
   list-style: none;
   display: flex;
@@ -43,21 +43,21 @@ button {
   position: relative;
   font-size: 1rem;
   cursor: pointer;
-}
-button::before {
-  content: "";
-  width: 2.6em;
-  height: 1.5em;
-  position: absolute;
-  border: var(--border);
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-60%, -50%) scale(0);
-  transition: transform 0.2s;
-}
-button:hover::before,
-button.is-active::before {
-  transform: translate(-60%, -50%) scale(1);
+  &::before {
+    content: "";
+    width: 2.6em;
+    height: 1.5em;
+    position: absolute;
+    border: var(--border);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%) scale(0);
+    transition: transform 0.2s;
+  }
+  &:hover::before,
+  &.is-active::before {
+    transform: translate(-60%, -50%) scale(1);
+  }
 }
 </style>

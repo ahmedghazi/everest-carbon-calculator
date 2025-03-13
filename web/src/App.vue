@@ -2,7 +2,7 @@
 import { onMounted, onUnmounted } from "vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
-import Logo from "./components/sections/Logo.vue";
+import Intro from "./components/sections/Intro.vue";
 import Presentation from "./components/sections/Presentation.vue";
 import CalculatorResult from "./components/sections/CalculatorResult.vue";
 import { usePubsub } from "vue-pubsub";
@@ -49,15 +49,24 @@ function _format() {
       footerBounding.height + "px"
     );
   }
+
+  const diagramme = document.querySelector(".diagrammes-cercle");
+  if (diagramme) {
+    let diagrammeBounding = diagramme.getBoundingClientRect();
+    document.documentElement.style.setProperty(
+      "--diagramme-w",
+      diagrammeBounding.width + "px"
+    );
+  }
 }
 </script>
 
 <template>
   <div id="page">
-    <Header />
+    <Header siteName="EVEREST" siteDescription="CREATIVITÉ & DURABILITÉ" />
 
     <main>
-      <Logo />
+      <Intro />
       <Presentation />
       <CalculatorResult />
     </main>

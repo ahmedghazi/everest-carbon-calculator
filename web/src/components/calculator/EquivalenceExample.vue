@@ -47,7 +47,7 @@ function refresh() {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .header,
 .body {
   padding: var(--space-sm);
@@ -70,10 +70,11 @@ function refresh() {
 }
 .infos {
   padding: var(--space-sm);
+  .counter-value {
+    margin-bottom: 0.2em;
+  }
 }
-.infos .counter-value {
-  margin-bottom: 0.2em;
-}
+
 .detail {
   font-size: 10pt;
   line-height: 1;

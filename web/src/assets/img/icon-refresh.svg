@@ -10,13 +10,13 @@
       }
 
       .cls-3 {
-        stroke: #00441c;
+        stroke: #00663a;
         stroke-miterlimit: 10;
         stroke-width: 0.61px;
       }
 
       .cls-4 {
-        fill: #00441c;
+        fill: #00663a;
       }
     </style>
     <clipPath id="clip-path">

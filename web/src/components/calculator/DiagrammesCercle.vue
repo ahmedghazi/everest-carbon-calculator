@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import DiagrammeCercle from "./DiagrammeCercle.vue";
+import Units from "./Units.vue";
 const items = ref([
   { title: "FINALISATION IMAGE", value: 0.8, delay: 0, radius: 20 },
   { title: "ÉTALONNAGE", value: 12.5, delay: 0.5, radius: 50 },
@@ -19,11 +20,29 @@ const items = ref([
         :title="item.title"
         :delay="item.delay"
         :radius="item.radius" />
+      <div class="units-wrapper box">
+        <Units layout="col" />
+      </div>
     </div>
   </div>
 </template>
 
-<style scoped>
-.diagrammes-cercle {
+<style scoped lang="scss">
+.units-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: calc(var(--space-xs) * 0.7) var(--space-xs);
+  border-bottom-left-radius: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: calc(var(--border-width) * -1);
+    left: 0;
+    width: calc(522px / 2 - var(--space-md) * 2);
+    height: var(--border-width);
+    transform: translateX(-100%);
+    background-color: var(--color-primary);
+  }
 }
 </style>

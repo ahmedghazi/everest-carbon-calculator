@@ -42,7 +42,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .diagramme-cercle {
   position: absolute;
   bottom: 0;
@@ -79,16 +79,17 @@ onMounted(() => {
 
   display: flex;
   align-items: center;
+  &::after {
+    content: "";
+    height: var(--border-width);
+    width: calc(19rem - 50px);
+    margin-left: 1em;
+    background-color: var(--color-primary);
+    flex: 2;
+    transform: translateY(0.5px);
+  }
 }
-.caption::after {
-  content: "";
-  height: var(--border-width);
-  width: calc(19rem - 50px);
-  margin-left: 1em;
-  background-color: var(--color-primary);
-  flex: 2;
-  transform: translateY(0.5px);
-}
+
 .title {
   text-align: right;
   width: 15rem;
