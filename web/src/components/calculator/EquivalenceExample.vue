@@ -50,7 +50,8 @@ function refresh() {
 <style scoped lang="scss">
 .header,
 .body {
-  padding: var(--space-sm);
+  /* padding: var(--space-sm); */
+  padding: calc(var(--space-sm) * 0.7) var(--space-sm);
 }
 .header,
 .body {

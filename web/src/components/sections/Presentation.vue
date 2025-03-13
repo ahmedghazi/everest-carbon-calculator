@@ -28,7 +28,7 @@ import ArrowS from "../partials/ArrowS.vue";
         </p>
       </div>
       <div class="arrow-cta">
-        <ArrowS :distance="15" :yoyo="true" />
+        <ArrowS :distance="15" :yoyo="false" />
       </div>
     </div>
   </section>

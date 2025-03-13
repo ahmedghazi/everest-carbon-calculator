@@ -21,7 +21,7 @@ defineProps<{
 
 <style scoped lang="scss">
 header {
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
   z-index: 10;
   position: fixed;
   .inner {

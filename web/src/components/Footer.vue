@@ -51,7 +51,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: var(--space-md) 0 var(--space-lg);
-  background-color: var(--color-background);
+  /* background-color: var(--color-background); */
 }
 p {
   font-size: var(--text-xs);

@@ -40,7 +40,7 @@ aside {
 .header,
 .body,
 .footer {
-  padding: var(--space-sm);
+  padding: calc(var(--space-sm) * 0.7) var(--space-sm);
 }
 .header {
   border-bottom: var(--border);

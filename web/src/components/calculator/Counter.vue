@@ -14,9 +14,9 @@ onMounted(() => {
   gsap.from(counter.value, {
     scrollTrigger: ".counter-value",
     innerText: 0,
-    duration: 1,
+    duration: 2,
     snap: {
-      innerText: 1,
+      innerText: 0.6,
     },
   });
 });
@@ -26,4 +26,10 @@ onMounted(() => {
   <div class="counter-value" ref="counter">{{ number }}</div>
 </template>
 
-<style></style>
+<style scoped>
+.counter-value {
+  /* display: inline-block; */
+  /* width: 3em; */
+  /* background-color: red; */
+}
+</style>
