@@ -223,4 +223,44 @@ p {
     font-family: var(--font-primary);
   }
 }
+@media screen and (max-width: 1080px) {
+  .container {
+    max-height: calc(var(--vh) * 100 - calc(var(--header-h) + var(--footer-h)));
+    overflow-y: auto;
+  }
+  .header,
+  .body,
+  .footer {
+    padding: 0 var(--space-md);
+  }
+  .header {
+    .inner {
+      border-bottom: none;
+    }
+  }
+  .body {
+    /* padding-bottom: 0; */
+  }
+  .foreword {
+    border-bottom: none;
+    padding-bottom: 0;
+    .item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .item {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-bottom: var(--space-lg);
+    border-left: none;
+    border-top: var(--border);
+    border-color: white;
+    /* padding-top: 0.5em; */
+  }
+  .items {
+    .item {
+      padding-top: 0.5em;
+    }
+  }
+}
 </style>
