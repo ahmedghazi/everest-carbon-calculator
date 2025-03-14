@@ -3,10 +3,12 @@ import { usePubsub } from "vue-pubsub";
 import Units from "./Units.vue";
 import Counter from "./Counter.vue";
 import iconRefresh from "../../assets/img/icon-refresh.svg";
+import { onMounted } from "vue";
+import gsap from "gsap";
 
 const pubsub = usePubsub();
 
-const props = defineProps<{
+defineProps<{
   title: string;
   value: number;
   exampleIcon: string;
@@ -17,13 +19,20 @@ const props = defineProps<{
 function refresh() {
   pubsub.to("EQUIVALENCE_EXAMPLE", "REFRESH");
 }
+
+onMounted(() => {
+  const tl = gsap.timeline({ delay: 3 });
+  tl.from(".equivalence .counter", { opacity: 0, x: -10, duration: 0.4 });
+  tl.from(".equivalence img.icon", { opacity: 0, x: -10, duration: 0.4 });
+  tl.from(".equivalence .detail", { opacity: 0, x: -10, duration: 0.4 });
+});
 </script>
 
 <template>
   <div class="header" v-html="title"></div>
   <div class="body">
     <div>
-      <Counter :number="234.1" />
+      <Counter :number="234.1" :delay="1" />
       <div class="units-wrapper">
         <Units layout="col" />
       </div>
@@ -33,10 +42,10 @@ function refresh() {
     <div class="equivalence">
       <div class="grid grid-cols-3">
         <div class="icon">
-          <img :src="exampleIcon" width="41" alt="icon" />
+          <img :src="exampleIcon" width="41" alt="icon" class="icon" />
         </div>
         <div class="infos col-span-2">
-          <Counter :number="exampleNumber" />
+          <Counter :number="exampleNumber" :delay="2" />
           <div class="detail" v-html="exampleDetail"></div>
         </div>
       </div>

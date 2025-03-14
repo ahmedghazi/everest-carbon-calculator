@@ -1,12 +1,25 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, defineEmits } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const props = defineProps<{
-  number: number;
-}>();
+// defineProps<{
+//   number: number;
+//   delay?: number;
+// }>();
+const props = withDefaults(
+  defineProps<{
+    number: number;
+    delay?: number;
+  }>(),
+  {
+    number: 0,
+    delay: 0,
+  }
+);
+// defineEmits(["_onComplete"]);
+// const emits = defineEmits(["_onComplete"]);
 
 const counter = ref<HTMLDivElement | null>(null);
 
@@ -14,10 +27,12 @@ onMounted(() => {
   gsap.from(counter.value, {
     scrollTrigger: ".counter-value",
     innerText: 0,
-    duration: 2,
+    duration: 1,
+    delay: props.delay,
     snap: {
       innerText: 0.6,
     },
+    // onComplete: emits("_onComplete"),
   });
 });
 </script>

@@ -51,6 +51,9 @@ aside {
 .body .counter-value {
   font-size: var(--text-xl);
   text-align: center;
+  /* background-color: red; */
+  /* display: inline-block; */
+  /* width: 3em; */
 }
 .footer .units {
   font-size: var(--text-md-alt);
