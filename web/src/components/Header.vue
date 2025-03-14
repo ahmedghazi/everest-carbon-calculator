@@ -37,4 +37,13 @@ header {
     }
   }
 }
+@media screen and (max-width: 1080px) {
+  header {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+  .site-description {
+    display: none;
+  }
+}
 </style>

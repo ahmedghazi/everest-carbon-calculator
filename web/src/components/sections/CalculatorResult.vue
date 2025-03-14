@@ -28,7 +28,7 @@ onMounted(() => {
           <div class="md:col-span-2">
             <SideBar />
           </div>
-          <div class="md:col-span-6">
+          <div class="md:col-span-6 hidden-sm">
             <DiagrammesCercle />
           </div>
         </div>

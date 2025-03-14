@@ -60,4 +60,9 @@ button {
     transform: translate(-60%, -50%) scale(1);
   }
 }
+@media screen and (max-width: 1080px) {
+  ul {
+    padding-right: 0;
+  }
+}
 </style>

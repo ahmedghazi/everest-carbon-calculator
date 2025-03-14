@@ -72,7 +72,7 @@ onMounted(() => {
 .body .counter-value {
   text-align: center;
 }
-.icon {
+div.icon {
   border-right: var(--border);
   display: grid;
   align-items: center;

@@ -53,6 +53,7 @@ const _goTo = () => {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  /* padding: 0 var(--space-md); */
 }
 .stamp {
   border: var(--border);
@@ -93,5 +94,11 @@ const _goTo = () => {
 .footer {
   display: grid;
   align-items: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .stamp {
+    width: 100%;
+  }
 }
 </style>

@@ -62,4 +62,10 @@ p {
     font-size: var(text-sm);
   }
 }
+
+@media screen and (max-width: 1080px) {
+  .inner {
+    max-width: 100%;
+  }
+}
 </style>

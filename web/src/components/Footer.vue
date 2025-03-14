@@ -13,7 +13,7 @@ function _toggle() {
   <footer id="footer-site">
     <div class="container">
       <div class="inner">
-        <div class="grid md:grid-cols-8">
+        <div class="grid md:grid-cols-8 gap-sm md:gap-0">
           <div class="md:col-span-5">
             <p>
               L'OUTIL DE CALCUL UTILISÉ POUR CETTE DÉMARCHE EST DÉVELOPPÉ PAR
@@ -38,7 +38,7 @@ function _toggle() {
   </footer>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 footer {
   z-index: 10;
   position: fixed;
@@ -63,5 +63,24 @@ p {
 button {
   display: flex;
   gap: 0.4em;
+}
+
+@media screen and (max-width: 1080px) {
+  footer {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+  .inner {
+    padding-top: var(--space-sm);
+    flex-direction: column;
+    /* background-color: red; */
+    gap: var(--space-md);
+    /* text-align: center; */
+    .toggle-wrapper {
+      justify-content: center;
+      border-top: var(--border);
+      padding-top: var(--space-sm);
+    }
+  }
 }
 </style>

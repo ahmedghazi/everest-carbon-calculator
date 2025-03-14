@@ -17,4 +17,10 @@ defineProps<{
   </ul>
 </template>
 
-<style scoped></style>
+<style scoped>
+ul.flex-col {
+  li {
+    line-height: 0.9;
+  }
+}
+</style>

@@ -64,3 +64,13 @@ section {
   border-left: var(--border);
   border-color: currentColor;
 }
+
+@media screen and (max-width: 1080px) {
+  .hidden-sm {
+    display: none;
+  }
+  section {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
