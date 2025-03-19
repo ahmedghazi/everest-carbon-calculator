@@ -46,6 +46,7 @@ footer {
 }
 .container {
   z-index: 2;
+  max-width: 80%;
 }
 .inner {
   border-top: var(--border);
@@ -53,7 +54,7 @@ footer {
   justify-content: space-between;
   padding: var(--space-md) 0 var(--space-lg);
   /* background-color: var(--color-background); */
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
 }
 p {
   font-size: var(--text-xs);

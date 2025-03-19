@@ -24,8 +24,11 @@ header {
   /* background-color: var(--color-background); */
   z-index: 10;
   position: fixed;
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   /* background-color: var(--color-primary); */
+  .container {
+    max-width: 80%;
+  }
   .inner {
     border-bottom: var(--border);
     display: flex;

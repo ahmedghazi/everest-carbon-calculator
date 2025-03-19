@@ -3,11 +3,12 @@
 
 html,
 body {
-  /* scroll-snap-type: y mandatory; */
+  scroll-snap-type: y mandatory;
 }
 
 body {
-  /* background: url("./img/bg.jpg") no-repeat center center/cover; */
+  /* background: url("./img/bg-text.png") no-repeat center center/cover;
+  background-attachment: fixed; */
 }
 #app {
   /* max-width: 1280px;

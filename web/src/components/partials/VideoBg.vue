@@ -18,7 +18,7 @@ onMounted(() => {
 video {
   position: fixed;
   inset: 0;
-  height: calc(var(--vw) * 100);
+  width: calc(var(--vw) * 100);
   height: calc(var(--vh) * 100);
   object-fit: cover;
   opacity: 0.4;
