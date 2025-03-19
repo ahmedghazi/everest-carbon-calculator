@@ -53,7 +53,7 @@ footer {
   justify-content: space-between;
   padding: var(--space-md) 0 var(--space-lg);
   /* background-color: var(--color-background); */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 }
 p {
   font-size: var(--text-xs);

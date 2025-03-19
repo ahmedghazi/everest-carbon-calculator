@@ -1,9 +1,19 @@
+<script setup lang="ts">
+import { onMounted, ref } from "vue";
+
+const video = ref<HTMLVideoElement | undefined>(undefined);
+onMounted(() => {
+  console.log(video);
+  if (video && video.value) video.value.playbackRate = 0.3;
+});
+</script>
+
 <template>
-  <video autoplay muted loop id="myVideo">
+  <video autoplay muted loop ref="video">
     <source src="../../assets/video/clouds.mp4" type="video/mp4" />
   </video>
 </template>
-<script></script>
+
 <style lang="scss">
 video {
   position: fixed;
