@@ -54,6 +54,7 @@ onMounted(() => {
 .diagramme-cercle {
   position: absolute;
   bottom: 0;
+  /* top: calc(100% - var(--radius)); */
   right: var(--space-md);
   /* width: 100%;
   width: calc(var(--vh) * 80 - calc(var(--header-h) + var(--footer-h))); */
@@ -61,8 +62,8 @@ onMounted(() => {
   display: flex;
   justify-content: center;
   align-items: end;
-  padding: 0 6% 0 6%;
-  padding: 0 var(--space-lg);
+  /* padding: 0 6% 0 6%;
+  padding: 0 var(--space-lg); */
   aspect-ratio: 1 / 1;
 }
 .inner {
