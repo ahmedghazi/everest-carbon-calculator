@@ -44,6 +44,9 @@ onMounted(() => {
 aside {
   /* height: 100%; */
 }
+aside {
+  height: 100%;
+}
 .container {
   /* padding: var(--space-xl) 0; */
   max-width: var(--container-fw);
