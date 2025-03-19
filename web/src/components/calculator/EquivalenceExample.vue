@@ -71,6 +71,7 @@ onMounted(() => {
 }
 .body .counter-value {
   text-align: center;
+  /* text-align: right; */
 }
 div.icon {
   border-right: var(--border);
