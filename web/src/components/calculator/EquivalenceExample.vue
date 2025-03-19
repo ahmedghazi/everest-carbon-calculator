@@ -83,6 +83,7 @@ div.icon {
   padding: var(--space-sm);
   .counter-value {
     margin-bottom: 0.2em;
+    line-height: 0.8;
   }
 }
 
@@ -103,6 +104,6 @@ div.icon {
   position: absolute;
   right: 0;
   top: 0;
-  padding: var(--space-sm);
+  padding: calc(var(--space-sm) * 1.2) var(--space-sm);
 }
 </style>

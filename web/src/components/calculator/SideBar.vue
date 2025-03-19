@@ -55,6 +55,7 @@ aside {
 }
 .body .counter-value {
   font-size: var(--text-xl);
+  line-height: 1;
   text-align: center;
   /* background-color: red; */
   /* display: inline-block; */
