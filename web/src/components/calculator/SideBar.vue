@@ -43,6 +43,10 @@ aside {
 .footer {
   padding: calc(var(--space-sm) * 0.7) var(--space-sm);
 }
+.header,
+.body {
+  padding-bottom: calc(var(--space-sm) * 1.2);
+}
 .header {
   border-bottom: var(--border);
 }
