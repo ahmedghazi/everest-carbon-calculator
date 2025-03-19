@@ -17,9 +17,9 @@ function _toggle() {
           <div class="md:col-span-6">
             <p>
               L'OUTIL DE CALCUL UTILISÉ POUR CETTE DÉMARCHE EST DÉVELOPPÉ PAR
-              EVEREST ET CERTIFIÉ PAR CARBONE4 QUI EN GARANTIT LA FIABILITÉ ET
-              LA CONFORMITÉ AVEC LE RÉFÉRENTIEL GHG (PROTOCOLE DE COMPTABILITÉ
-              CARBONE).
+              EVEREST ET CERTIFIÉ PAR CARBONE4<br />
+              QUI EN GARANTIT LA FIABILITÉ ET LA CONFORMITÉ AVEC LE RÉFÉRENTIEL
+              GHG (PROTOCOLE DE COMPTABILITÉ CARBONE).
             </p>
           </div>
           <div class="md:col-span-2">
@@ -46,7 +46,7 @@ footer {
 }
 .container {
   z-index: 2;
-  max-width: 80%;
+  max-width: 90%;
 }
 .inner {
   border-top: var(--border);
@@ -55,6 +55,9 @@ footer {
   padding: var(--space-md) 0 var(--space-lg);
   /* background-color: var(--color-background); */
   /* backdrop-filter: blur(20px); */
+}
+.grid {
+  width: 100%;
 }
 p {
   font-size: var(--text-xs);
