@@ -30,6 +30,9 @@ const items = ref([
 </template>
 
 <style scoped lang="scss">
+.diagrammes-cercle {
+  height: 52.75vh;
+}
 .inner {
   /* padding: 0 var(--space-md); */
 }

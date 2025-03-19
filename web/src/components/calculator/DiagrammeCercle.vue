@@ -18,6 +18,7 @@ onMounted(() => {
   gsap.to(inner.value, {
     scrollTrigger: ".diagramme-cercle",
     opacity: 1,
+    scale: 1,
     duration: 1,
     delay: props.delay,
     onComplete: () => {
@@ -63,6 +64,8 @@ onMounted(() => {
   /* width: 100%;
   width: calc(var(--vh) * 80 - calc(var(--header-h) + var(--footer-h))); */
   width: 66.66%;
+  height: 52.75vh;
+  width: 52.75vh;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -72,12 +75,14 @@ onMounted(() => {
 }
 .inner {
   opacity: 0;
-
+  transform: scale(0);
+  transform-origin: bottom;
   /* height: 100% !important;  */
 }
 .cercle {
   border-radius: 100%;
   border: var(--border);
+  /* border-width: 3px; */
   width: 100%;
   aspect-ratio: 1 / 1;
   display: grid;

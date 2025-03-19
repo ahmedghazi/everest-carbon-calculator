@@ -69,6 +69,7 @@
   --gutter: 10px;
 
   --container-w: 892px;
+  --container-fw: 90%;
   /* --container-w: 1000px; */
 
   --screen-sm: 768px;

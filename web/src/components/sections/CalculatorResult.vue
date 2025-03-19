@@ -42,11 +42,16 @@ onMounted(() => {
 .container > .inner,
 .container > .inner > .grid,
 aside {
-  height: 100%;
+  /* height: 100%; */
+}
+.container {
+  /* padding: var(--space-xl) 0; */
+  max-width: var(--container-fw);
 }
 .inner {
   padding: var(--space-xl) 0;
 }
+
 @media screen and (max-width: 1080px) {
   aside {
     height: 70%;

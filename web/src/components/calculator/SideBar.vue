@@ -35,6 +35,7 @@ aside {
   flex-direction: column;
   justify-content: space-between;
   gap: var(--space-lg);
+  max-width: 214px;
 }
 
 .header,
