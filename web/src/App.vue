@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
 import Header from "./components/Header.vue";
+import VideoBg from "./components/partials/VideoBg.vue";
 import Footer from "./components/Footer.vue";
 import Intro from "./components/sections/Intro.vue";
 import Presentation from "./components/sections/Presentation.vue";
@@ -64,6 +65,7 @@ function _format() {
 
 <template>
   <div id="page">
+    <VideoBg />
     <Header siteName="EVEREST" siteDescription="CREATIVITÉ & DURABILITÉ" />
 
     <VerticalText text="DEVIS : DV25002 LV RSE" location="left" />

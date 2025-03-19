@@ -48,6 +48,7 @@ import ArrowS from "../partials/ArrowS.vue";
 }
 p {
   text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .arrow-cta {
   position: absolute;

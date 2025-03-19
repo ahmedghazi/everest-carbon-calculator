@@ -21,12 +21,12 @@ body {
   margin: auto;
 }
 header {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   width: 100%;
 }
 footer {
-  position: sticky;
+  /* position: sticky; */
   bottom: 0;
   width: 100%;
 }

@@ -24,6 +24,8 @@ header {
   /* background-color: var(--color-background); */
   z-index: 10;
   position: fixed;
+  backdrop-filter: blur(10px);
+  /* background-color: var(--color-primary); */
   .inner {
     border-bottom: var(--border);
     display: flex;

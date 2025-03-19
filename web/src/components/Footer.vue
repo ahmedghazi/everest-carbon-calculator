@@ -42,6 +42,7 @@ function _toggle() {
 footer {
   z-index: 10;
   position: fixed;
+  /*  */
 }
 .container {
   z-index: 2;
@@ -52,6 +53,7 @@ footer {
   justify-content: space-between;
   padding: var(--space-md) 0 var(--space-lg);
   /* background-color: var(--color-background); */
+  backdrop-filter: blur(10px);
 }
 p {
   font-size: var(--text-xs);

@@ -37,4 +37,9 @@ defineProps<{
   text-align: center;
   /* transform-origin: bottom left; */
 }
+@media screen and (max-width: 1080px) {
+  .wrapper {
+    display: none;
+  }
+}
 </style>
