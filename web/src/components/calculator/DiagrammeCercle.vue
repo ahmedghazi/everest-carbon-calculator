@@ -12,12 +12,20 @@ const props = defineProps<{
 }>();
 
 const inner = ref<HTMLDivElement | null>(null);
+const caption = ref<HTMLDivElement | null>(null);
 onMounted(() => {
   gsap.to(inner.value, {
     scrollTrigger: ".diagramme-cercle",
     opacity: 1,
     duration: 1,
     delay: props.delay,
+    onComplete: () => {
+      gsap.to(caption.value, {
+        scrollTrigger: ".diagramme-cercle",
+        opacity: 1,
+        duration: 1,
+      });
+    },
   });
 });
 </script>
@@ -30,7 +38,7 @@ onMounted(() => {
         width: radius + '%',
         // height: radius + '%',
       }">
-      <div class="caption">
+      <div class="caption" ref="caption">
         <div class="title">
           {{ title }}
         </div>
@@ -85,6 +93,7 @@ onMounted(() => {
 
   display: flex;
   align-items: center;
+  opacity: 0;
   &::after {
     content: "";
     height: var(--border-width);
