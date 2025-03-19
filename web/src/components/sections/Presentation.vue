@@ -8,29 +8,34 @@ import ArrowS from "../partials/ArrowS.vue";
   <section>
     <div class="outter">
       <div class="inner">
-        <p>
-          EVEREST intègre l'évaluation carbone dans chaque étape de vos projets.
-        </p>
-        <p>
-          Soucieux de minimiser l'impact environnemental de nos activités, nous
-          avons développé un outil de calcul carbone capable d'évaluer les
-          émissions de CO2 (kg eCO2) liées à chaque phase de nos prestations.
-        </p>
-        <p>
-          Dès l'élaboration du devis, cet outil garantit une transparence totale
-          sur l'impact environnemental de votre projet, vous permettant ainsi
-          d'identifier précisement l'empreinte carbone de chaque poste.
-        </p>
-        <p>
-          EVEREST s'engage à réduire l'impact de son activité sur
-          l'environnement en prenant en charge la compensation des émissions de
-          CO2 de votre projet en s'appuyant sur des partenaires labellisés bas
-          carbone spécialisés dans la reforestation et la transition vers
-          l'agriculture biologique.
-        </p>
-      </div>
-      <div class="arrow-cta">
-        <ArrowS :distance="10" :yoyo="false" />
+        <div class="text">
+          <p>
+            EVEREST intègre l'évaluation carbone dans chaque étape de vos
+            projets.
+          </p>
+          <p>
+            Soucieux de minimiser l'impact environnemental de nos activités,
+            nous avons développé un outil de calcul carbone capable d'évaluer
+            les émissions de CO<sub>2</sub> (kg eCO<sub>2</sub>) liées à chaque
+            phase de nos prestations.
+          </p>
+          <p>
+            Dès l'élaboration du devis, cet outil garantit une transparence
+            totale sur l'impact environnemental de votre projet, vous permettant
+            ainsi d'identifier précisement l'empreinte carbone de chaque poste.
+          </p>
+          <p>
+            EVEREST s'engage à réduire l'impact de son activité sur
+            l'environnement en prenant en charge la compensation des émissions
+            de CO2 de votre projet en s'appuyant sur des partenaires labellisés
+            bas carbone spécialisés dans la reforestation et la transition vers
+            l'agriculture biologique.
+          </p>
+        </div>
+        <div class="arrow-cta">
+          <!-- <ArrowS :distance="10" :yoyo="false" /> -->
+          <span>↓</span>
+        </div>
       </div>
     </div>
   </section>
@@ -47,15 +52,19 @@ import ArrowS from "../partials/ArrowS.vue";
   max-width: 35.38rem;
   margin: auto;
 }
+.text {
+  margin-bottom: var(--space-md);
+}
 p {
   text-align: justify;
   font-family: Helvetica, sans-serif;
 }
 .arrow-cta {
-  position: absolute;
-  bottom: var(--space-md);
-  left: 50%;
-  transform: translateX(-50%);
+  margin: auto;
+  /* position: absolute; */
+  /* bottom: var(--space-md); */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
   border: var(--border);
   border-radius: 50%;
   /* width: 1.5em; */
@@ -65,8 +74,8 @@ p {
   overflow: hidden;
   span {
     font-size: var(text-xs);
-    font-size: 0.6em;
-    top: -7px;
+    font-size: 0.55em;
+    top: -8px;
     position: relative;
   }
 }

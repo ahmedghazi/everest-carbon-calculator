@@ -24,7 +24,8 @@ defineProps<{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: var(--text-xs);
+  font-size: calc(var(--text-xs) * 0.9);
+  /* width: calc(calc(var(--vh) * 100 - var(--container-fw)) / 2); */
   &.is-right {
     right: 0;
     .vertical {
