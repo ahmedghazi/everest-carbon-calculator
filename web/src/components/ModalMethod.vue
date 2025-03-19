@@ -167,11 +167,13 @@ watch(
 
 .container {
   background-color: var(--color-primary);
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: var(--container-fw);
   .body {
     flex: 2;
   }
@@ -197,6 +199,9 @@ p {
     display: flex;
     justify-content: flex-end;
     padding: var(--space-sm) 0;
+  }
+  svg {
+    width: 18px;
   }
 }
 
