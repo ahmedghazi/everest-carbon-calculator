@@ -47,8 +47,8 @@ onMounted(() => {
       </div>
       <div class="cercle">
         <div class="value">
-          <Counter :number="value" />
-          <!-- {{ value }} -->
+          <!-- <Counter :number="value" /> -->
+          {{ value }}
         </div>
       </div>
     </div>
