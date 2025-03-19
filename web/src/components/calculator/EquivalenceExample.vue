@@ -95,6 +95,7 @@ div.icon {
   top: 50%;
   transform: translateY(-50%);
   font-size: var(--text-xs);
+  font-size: 0.45em;
 }
 
 .refresh {
