@@ -30,7 +30,8 @@ onMounted(() => {
     duration: 2,
     delay: props.delay,
     snap: {
-      innerText: 0.6,
+      // innerText: 0.6,
+      innerText: 10,
     },
     // onComplete: emits("_onComplete"),
   });
