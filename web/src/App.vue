@@ -6,6 +6,7 @@ import Intro from "./components/sections/Intro.vue";
 import Presentation from "./components/sections/Presentation.vue";
 import CalculatorResult from "./components/sections/CalculatorResult.vue";
 import { usePubsub } from "vue-pubsub";
+import VerticalText from "./components/partials/VerticalText.vue";
 
 const pubsub = usePubsub();
 pubsub.on("EQUIVALENCE_EXAMPLE", (data) => {
@@ -65,6 +66,8 @@ function _format() {
   <div id="page">
     <Header siteName="EVEREST" siteDescription="CREATIVITÉ & DURABILITÉ" />
 
+    <VerticalText text="DEVIS : DV25002 LV RSE" location="left" />
+    <VerticalText text="DEVIS : DV25002 LV RSE" location="right" />
     <main>
       <Intro />
       <Presentation />

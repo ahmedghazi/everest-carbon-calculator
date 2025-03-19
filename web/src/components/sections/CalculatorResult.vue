@@ -47,4 +47,9 @@ aside {
 .inner {
   padding: var(--space-xl) 0;
 }
+@media screen and (max-width: 1080px) {
+  aside {
+    height: 70%;
+  }
+}
 </style>

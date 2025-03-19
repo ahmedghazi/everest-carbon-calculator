@@ -86,7 +86,7 @@ div.icon {
 }
 
 .detail {
-  font-size: 10pt;
+  font-size: 10px;
   line-height: 1;
 }
 .units-wrapper {

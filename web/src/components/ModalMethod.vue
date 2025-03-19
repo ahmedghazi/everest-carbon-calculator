@@ -16,14 +16,14 @@ watch(
       gsap.to(modal.value, {
         y: 0,
         opacity: 1,
-        duration: 0.4,
+        duration: 1,
         ease: "power3.out",
       });
     } else {
       gsap.to(modal.value, {
         y: 20,
         opacity: 0,
-        duration: 0.4,
+        duration: 1,
         ease: "power3.out",
       });
     }
@@ -65,7 +65,7 @@ watch(
           <div class="grid md:grid-cols-2 gap-md">
             <div class="item">
               <h2 class="b-b">MÉTHODE DE CALCUL</h2>
-              <p class="text-lg">
+              <p class="text-lg-alt">
                 Voici les principales étapes et hypothèses de notre approche
                 simplifiée
               </p>
@@ -86,7 +86,7 @@ watch(
           </div>
         </div>
         <div class="items">
-          <div class="grid md:grid-cols-4">
+          <div class="grid md:grid-cols-4 gap-sm">
             <div class="item">
               <div class="index">01.</div>
               <h2 class="b-b">SALLE OU POSTE DE TRAVAIL</h2>
@@ -178,7 +178,10 @@ watch(
 }
 p {
   /* font-size: 12px; */
-  &.text-lg {
+  font-size: var(--text-sm-alt);
+  &.text-lg-alt {
+    font-size: var(--text-lg-alt);
+
     /* font-size: 20pt; */
   }
 }
@@ -212,7 +215,7 @@ p {
   padding: 0 0 var(--space-sm) 0;
 }
 .item {
-  padding-right: var(--space-sm);
+  /* padding-right: var(--space-sm); */
 
   &:not(:first-child) {
     padding-left: var(--space-sm);
@@ -238,9 +241,7 @@ p {
       border-bottom: none;
     }
   }
-  .body {
-    /* padding-bottom: 0; */
-  }
+
   .foreword {
     border-bottom: none;
     padding-bottom: 0;
@@ -255,7 +256,6 @@ p {
     border-left: none;
     border-top: var(--border);
     border-color: white;
-    /* padding-top: 0.5em; */
   }
   .items {
     .item {

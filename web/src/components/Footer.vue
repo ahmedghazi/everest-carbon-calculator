@@ -14,7 +14,7 @@ function _toggle() {
     <div class="container">
       <div class="inner">
         <div class="grid md:grid-cols-8 gap-sm md:gap-0">
-          <div class="md:col-span-5">
+          <div class="md:col-span-6">
             <p>
               L'OUTIL DE CALCUL UTILISÉ POUR CETTE DÉMARCHE EST DÉVELOPPÉ PAR
               EVEREST ET CERTIFIÉ PAR CARBONE4 QUI EN GARANTIT LA FIABILITÉ ET
@@ -22,7 +22,7 @@ function _toggle() {
               CARBONE).
             </p>
           </div>
-          <div class="md:col-span-3">
+          <div class="md:col-span-2">
             <div class="toggle-wrapper">
               <button @click="_toggle">
                 <span v-if="!modalOpen">↑</span>
@@ -69,6 +69,7 @@ button {
   footer {
     padding-left: var(--space-md);
     padding-right: var(--space-md);
+    z-index: 2;
   }
   .inner {
     padding-top: var(--space-sm);

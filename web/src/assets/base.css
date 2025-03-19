@@ -50,9 +50,11 @@
   --text-xs: 8px;
   --text-xs: 10px;
   --text-sm: 13px;
+  --text-sm-alt: 12px;
   --text-md: 15px;
   --text-md-alt: 18px;
   --text-lg: 25px;
+  --text-lg-alt: 20px;
   --text-xl: 60px;
   /* --text-md-mobile: 1rem;
   --text-lg--mobile: 20px; */
@@ -66,8 +68,8 @@
 
   --gutter: 10px;
 
-  /* --container-w: 892px; */
-  --container-w: 1000px;
+  --container-w: 892px;
+  /* --container-w: 1000px; */
 
   --screen-sm: 768px;
   --screen-md: 1080px;

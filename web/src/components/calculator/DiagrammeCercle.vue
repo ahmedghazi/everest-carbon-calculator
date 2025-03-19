@@ -28,7 +28,7 @@ onMounted(() => {
       ref="inner"
       :style="{
         width: radius + '%',
-        height: radius + '%',
+        // height: radius + '%',
       }">
       <div class="caption">
         <div class="title">
@@ -49,12 +49,17 @@ onMounted(() => {
   right: var(--space-md);
   /* width: 100%;
   width: calc(var(--vh) * 80 - calc(var(--header-h) + var(--footer-h))); */
-  width: 70%;
+  width: 66.66%;
   display: flex;
   justify-content: center;
+  align-items: end;
+  padding: 0 6% 0 6%;
+  aspect-ratio: 1 / 1;
 }
 .inner {
   opacity: 0;
+
+  /* height: 100% !important;  */
 }
 .cercle {
   border-radius: 100%;
@@ -74,6 +79,7 @@ onMounted(() => {
   top: -0.5em;
   line-height: 1;
   width: 34rem;
+  width: 29.4rem;
   left: 50%;
   transform: translateX(-100%);
 

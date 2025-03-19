@@ -27,7 +27,7 @@ onMounted(() => {
   gsap.from(counter.value, {
     scrollTrigger: ".counter-value",
     innerText: 0,
-    duration: 1,
+    duration: 2,
     delay: props.delay,
     snap: {
       innerText: 0.6,

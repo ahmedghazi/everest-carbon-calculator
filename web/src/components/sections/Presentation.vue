@@ -28,7 +28,7 @@ import ArrowS from "../partials/ArrowS.vue";
         </p>
       </div>
       <div class="arrow-cta">
-        <ArrowS :distance="15" :yoyo="false" />
+        <ArrowS :distance="10" :yoyo="false" />
       </div>
     </div>
   </section>
@@ -43,6 +43,7 @@ import ArrowS from "../partials/ArrowS.vue";
 }
 .inner {
   max-width: 35rem;
+  max-width: 35.38rem;
   margin: auto;
 }
 p {
@@ -55,11 +56,16 @@ p {
   transform: translateX(-50%);
   border: var(--border);
   border-radius: 50%;
-  width: 1.5em;
+  /* width: 1.5em; */
+  width: 12px;
+  height: 9.5px;
   text-align: center;
   overflow: hidden;
   span {
-    font-size: var(text-sm);
+    font-size: var(text-xs);
+    font-size: 0.6em;
+    top: -7px;
+    position: relative;
   }
 }
 

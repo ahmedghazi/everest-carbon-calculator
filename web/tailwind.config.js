@@ -43,9 +43,11 @@ export default {
     fontSize: {
       xs: ["var(--text-xs)", "1"],
       sm: ["var(--text-sm)", "1"],
+      "sm-alt": ["var(--text-sm-alt)", "1"],
       md: ["var(--text-md)", "1.2"],
       "md-alt": ["var(--text-md-alt)", "1"],
       lg: ["var(--text-lg)", "1"],
+      "lg-alt": ["var(--text-lg-alt)", "1"],
       xl: ["var(--text-xl)", "1"],
       // "text-lg--mobile": ["var(--text-lg--mobile)", "1"],
     },
