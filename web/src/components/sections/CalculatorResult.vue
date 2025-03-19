@@ -46,7 +46,7 @@ aside {
 } */
 .flex {
   justify-content: space-around;
-  gap: 10em;
+  /* gap: 10em; */
   .md\:col-span-6 {
     min-width: 56vh;
   }
