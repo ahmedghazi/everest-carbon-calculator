@@ -90,6 +90,7 @@ onMounted(() => {
   line-height: 1;
   width: 34rem;
   width: 29.4rem;
+  width: 31rem;
   left: 50%;
   transform: translateX(-100%);
 

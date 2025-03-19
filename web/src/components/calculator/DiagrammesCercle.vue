@@ -13,15 +13,17 @@ const items = ref([
 <template>
   <div class="diagrammes-cercle h-full">
     <div class="inner h-full">
-      <DiagrammeCercle
-        v-for="item in items"
-        :key="item.value"
-        :value="item.value"
-        :title="item.title"
-        :delay="item.delay"
-        :radius="item.radius" />
-      <div class="units-wrapper box">
-        <Units layout="col" />
+      <div class="h-full">
+        <DiagrammeCercle
+          v-for="item in items"
+          :key="item.value"
+          :value="item.value"
+          :title="item.title"
+          :delay="item.delay"
+          :radius="item.radius" />
+        <div class="units-wrapper box">
+          <Units layout="col" />
+        </div>
       </div>
     </div>
   </div>
@@ -29,7 +31,7 @@ const items = ref([
 
 <style scoped lang="scss">
 .inner {
-  /* padding: 0 var(--space-lg); */
+  /* padding: 0 var(--space-md); */
 }
 .units-wrapper {
   position: absolute;
