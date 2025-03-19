@@ -11,16 +11,16 @@ defineProps<{
       'flex-row justify-between': layout === 'row',
       'flex-col': layout === 'col',
     }">
-    <li>KG.</li>
-    <li>CO2.</li>
-    <li>EQ.</li>
+    <li class="item">KG.</li>
+    <li class="item">CO2.</li>
+    <li class="item">EQ.</li>
   </ul>
 </template>
 
-<style scoped>
-ul.flex-col {
+<style lang="scss">
+/* ul.flex-col {
   li {
     line-height: 0.9;
   }
-}
+} */
 </style>

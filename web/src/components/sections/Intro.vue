@@ -38,7 +38,7 @@ const _goTo = () => {
             </div>
             <div class="footer">
               <button @click="_goTo">
-                <span>DÉTAILS</span> <ArrowS :distance="5" :yoyo="true" />
+                <span>DÉTAILS</span> <ArrowS :distance="1" :yoyo="true" />
               </button>
             </div>
           </div>
@@ -87,8 +87,19 @@ const _goTo = () => {
   display: flex;
   justify-content: center;
   gap: 1em;
-  .units {
+  padding: 0.5rem;
+  .text-xl {
+    line-height: 0.9;
+    font-size: 85px;
+  }
+  .units-wrapper ul.units {
     text-align: left;
+
+    &.flex-col {
+      li {
+        line-height: 1.2 !important;
+      }
+    }
   }
 }
 .footer {

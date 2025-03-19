@@ -1,5 +1,7 @@
 <script setup>
 import ArrowS from "../partials/ArrowS.vue";
+
+// onMounted(() => {});
 </script>
 
 <template>
