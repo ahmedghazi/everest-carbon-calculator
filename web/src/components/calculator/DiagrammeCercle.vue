@@ -61,6 +61,7 @@ onMounted(() => {
   bottom: 0;
   /* top: calc(100% - var(--radius)); */
   right: var(--space-md);
+  right: 4em;
   /* width: 100%;
   width: calc(var(--vh) * 80 - calc(var(--header-h) + var(--footer-h))); */
   width: 66.66%;
