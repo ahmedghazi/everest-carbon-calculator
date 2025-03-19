@@ -38,7 +38,6 @@ import ArrowS from "../partials/ArrowS.vue";
 .outter {
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
   height: 100%;
 }
 .inner {
@@ -48,7 +47,7 @@ import ArrowS from "../partials/ArrowS.vue";
 }
 p {
   text-align: justify;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 .arrow-cta {
   position: absolute;

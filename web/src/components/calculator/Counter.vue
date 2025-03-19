@@ -10,11 +10,11 @@ gsap.registerPlugin(ScrollTrigger);
 // }>();
 const props = withDefaults(
   defineProps<{
-    number: number;
+    number: number | string;
     delay?: number;
   }>(),
   {
-    number: 0,
+    number: "000",
     delay: 0,
   }
 );
@@ -47,5 +47,7 @@ onMounted(() => {
   /* display: inline-block; */
   /* width: 3em; */
   /* background-color: red; */
+  tabular-nums: auto;
+  font-variant-numeric: tabular-nums;
 }
 </style>

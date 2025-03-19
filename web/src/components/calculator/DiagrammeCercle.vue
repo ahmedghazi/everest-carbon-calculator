@@ -2,6 +2,7 @@
 import { onMounted, ref } from "vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Counter from "./Counter.vue";
 gsap.registerPlugin(ScrollTrigger);
 
 const props = defineProps<{
@@ -44,7 +45,10 @@ onMounted(() => {
         </div>
       </div>
       <div class="cercle">
-        <div class="value">{{ value }}</div>
+        <div class="value">
+          <Counter :number="value" />
+          <!-- {{ value }} -->
+        </div>
       </div>
     </div>
   </div>
