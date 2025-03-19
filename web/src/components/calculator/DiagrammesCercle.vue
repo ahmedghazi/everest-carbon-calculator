@@ -3,10 +3,10 @@ import { ref } from "vue";
 import DiagrammeCercle from "./DiagrammeCercle.vue";
 import Units from "./Units.vue";
 const items = ref([
-  { value: 0.8, delay: 1, radius: 20, title: "FINALISATION IMAGE" },
-  { value: 12.5, delay: 3, radius: 50, title: "ÉTALONNAGE" },
-  { value: 23.1, delay: 5, radius: 75, title: "MONTAGE" },
-  { value: 169, delay: 7, radius: 100, title: "PERSONNEL" },
+  { delay: 1, value: 0.8, radius: 20, title: "FINALISATION IMAGE" },
+  { delay: 3, value: 12.5, radius: 50, title: "ÉTALONNAGE" },
+  { delay: 5, value: 23.1, radius: 75, title: "MONTAGE" },
+  { delay: 7, value: 169, radius: 100, title: "PERSONNEL" },
 ]);
 </script>
 
@@ -28,6 +28,9 @@ const items = ref([
 </template>
 
 <style scoped lang="scss">
+.inner {
+  /* padding: 0 var(--space-lg); */
+}
 .units-wrapper {
   position: absolute;
   bottom: 0;

@@ -62,6 +62,7 @@ onMounted(() => {
   justify-content: center;
   align-items: end;
   padding: 0 6% 0 6%;
+  padding: 0 var(--space-lg);
   aspect-ratio: 1 / 1;
 }
 .inner {
