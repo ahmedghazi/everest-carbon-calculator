@@ -14,15 +14,15 @@ watch(
     // console.log(`modal is ${isOpen}`);
     if (isOpen) {
       gsap.to(modal.value, {
-        y: 0,
+        // y: 0,
         opacity: 1,
         duration: 1,
         ease: "power3.out",
       });
     } else {
       gsap.to(modal.value, {
-        y: "200%",
-        // opacity: 0,
+        // y: "200%",
+        opacity: 0,
         duration: 1,
         ease: "power3.out",
       });
@@ -157,8 +157,8 @@ watch(
   left: 0;
   z-index: 1;
   pointer-events: none;
-  /* opacity: 0; */
-  transform: translate(0, 200%);
+  opacity: 0;
+  /* transform: translate(0, 200%); */
   font-family: var(--font-secondary);
   &.is-open {
     pointer-events: all;
