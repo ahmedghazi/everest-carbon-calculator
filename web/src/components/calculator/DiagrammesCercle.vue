@@ -32,23 +32,24 @@ const items = ref([
 <style scoped lang="scss">
 .diagrammes-cercle {
   height: 52.75vh;
+  height: clamp(395px, var(--diagram-radius), 500px);
 }
 .inner {
   /* padding: 0 var(--space-md); */
 }
 .units-wrapper {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -20px;
+  right: -50px;
   padding: calc(var(--space-xs) * 0.7) var(--space-xs);
-  border-bottom-left-radius: 0;
+  /* border-bottom-left-radius: 0; */
   &::before {
     content: "";
     position: absolute;
-    bottom: calc(var(--border-width) * -1);
+    bottom: calc(18px - var(--border-width) * -1);
     left: 0;
-    /* width: calc(522px / 2 - var(--space-md) * 2); */
-    width: 190px;
+    width: calc(52.75vh / 2);
+
     height: var(--border-width);
     transform: translateX(-100%);
     background-color: var(--color-primary);

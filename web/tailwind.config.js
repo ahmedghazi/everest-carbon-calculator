@@ -14,7 +14,7 @@ export default {
   theme: {
     screens: {
       sm: "768px",
-      md: "1080px",
+      md: "1180px",
       lg: "1600px",
     },
     spacing: {

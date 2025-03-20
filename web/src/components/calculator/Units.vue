@@ -18,9 +18,9 @@ defineProps<{
 </template>
 
 <style lang="scss">
-/* ul.flex-col {
+ul.flex-col {
   li {
-    line-height: 0.9;
+    line-height: inherit;
   }
-} */
+}
 </style>

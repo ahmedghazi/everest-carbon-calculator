@@ -21,7 +21,8 @@ body {
 }
 
 .container {
-  max-width: var(--container-w);
+  width: 100%;
+  max-width: var(--container-fw);
   margin: auto;
 }
 header {

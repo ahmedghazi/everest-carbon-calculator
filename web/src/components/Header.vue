@@ -27,7 +27,7 @@ header {
   /* backdrop-filter: blur(20px); */
   /* background-color: var(--color-primary); */
   .container {
-    max-width: 90%;
+    max-width: var(--container-fw);
   }
   .inner {
     border-bottom: var(--border);

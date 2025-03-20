@@ -47,7 +47,6 @@ onMounted(() => {
       </div>
       <div class="cercle">
         <div class="value">
-          <!-- <Counter :number="value" /> -->
           {{ value }}
         </div>
       </div>
@@ -66,8 +65,11 @@ onMounted(() => {
   /* width: 100%;
   width: calc(var(--vh) * 80 - calc(var(--header-h) + var(--footer-h))); */
   width: 66.66%;
-  height: 52.75vh;
-  width: 52.75vh;
+  height: var(--diagram-radius);
+  width: var(--diagram-radius);
+  width: clamp(395px, var(--diagram-radius), 500px);
+  height: clamp(395px, var(--diagram-radius), 500px);
+
   display: flex;
   justify-content: center;
   align-items: end;
@@ -99,9 +101,14 @@ onMounted(() => {
   text-align: right;
   top: -0.5em;
   line-height: 1;
-  width: 34rem;
-  width: 29.4rem;
-  width: 31rem;
+  /* width: 34rem; */
+  /* width: 29.4rem; */
+  /* width: 31rem; */
+  /* width: 54vh; */
+  /* width: calc(var(--diagram-radius) + 11rem); */
+  width: clamp(395px, var(--diagram-radius), 500px);
+  /* background-color: red; */
+  /* min-width: 410px; */
   left: 50%;
   transform: translateX(-100%);
 
@@ -112,15 +119,15 @@ onMounted(() => {
     content: "";
     height: var(--border-width);
     width: calc(19rem - 50px);
-    margin-left: 1em;
+    margin-left: 0.5em;
     background-color: var(--color-primary);
     flex: 2;
     transform: translateY(0.5px);
   }
-}
 
-.title {
-  text-align: right;
-  width: 15rem;
+  .title {
+    text-align: right;
+    width: 11rem;
+  }
 }
 </style>

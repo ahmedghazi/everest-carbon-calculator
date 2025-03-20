@@ -27,9 +27,9 @@ import ArrowS from "../partials/ArrowS.vue";
           <p>
             EVEREST s'engage à réduire l'impact de son activité sur
             l'environnement en prenant en charge la compensation des émissions
-            de CO2 de votre projet en s'appuyant sur des partenaires labellisés
-            bas carbone spécialisés dans la reforestation et la transition vers
-            l'agriculture biologique.
+            de CO<sub>2</sub> de votre projet en s'appuyant sur des partenaires
+            labellisés bas carbone spécialisés dans la reforestation et la
+            transition vers l'agriculture biologique.
           </p>
         </div>
         <div class="arrow-cta">

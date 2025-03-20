@@ -69,13 +69,15 @@
   --gutter: 10px;
 
   --container-w: 892px;
-  --container-fw: 90%;
+  --container-fw: calc(var(--vw) * 100 - calc(var(--space-xl) * 2));
   /* --container-w: 1000px; */
 
   --screen-sm: 768px;
-  --screen-md: 1080px;
-  --screen-lg: 1400px;
+  --screen-md: 1180px;
+  --screen-lg: 1600px;
   --screen-xl: 1920px;
+
+  --diagram-radius: 52.75vh;
 }
 
 /* Breakpoints */

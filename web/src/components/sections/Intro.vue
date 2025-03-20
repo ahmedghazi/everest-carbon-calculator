@@ -22,25 +22,23 @@ const _goTo = () => {
 <template>
   <section>
     <div class="outter">
-      <div class="container">
-        <div class="inner">
-          <div class="stamp" ref="logo">
-            <div class="header">
-              Environmental<br />
-              Impact Carbone Calculator<br />
-              of your project
+      <div class="inner">
+        <div class="stamp" ref="logo">
+          <div class="header">
+            Environmental<br />
+            Impact Carbone Calculator<br />
+            of your project
+          </div>
+          <div class="body">
+            <div class="value text-xl">234.10</div>
+            <div class="units-wrapper">
+              <Units layout="col" />
             </div>
-            <div class="body">
-              <div class="value text-xl">234.10</div>
-              <div class="units-wrapper">
-                <Units layout="col" />
-              </div>
-            </div>
-            <div class="footer">
-              <button @click="_goTo">
-                <span>DÉTAILS</span> <ArrowS :distance="1" :yoyo="true" />
-              </button>
-            </div>
+          </div>
+          <div class="footer">
+            <button @click="_goTo">
+              <span>DÉTAILS</span> <ArrowS :distance="1" :yoyo="true" />
+            </button>
           </div>
         </div>
       </div>
@@ -63,6 +61,7 @@ const _goTo = () => {
   display: flex;
   flex-direction: column;
   text-align: center;
+  max-width: 440px;
   & > * {
     padding: var(--space-md);
   }
@@ -96,9 +95,7 @@ const _goTo = () => {
     text-align: left;
 
     &.flex-col {
-      li {
-        line-height: 1.2 !important;
-      }
+      line-height: 1.5 !important;
     }
   }
 }

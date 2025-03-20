@@ -71,9 +71,11 @@ function _format() {
     <VerticalText text="DEVIS : DV25002 LV RSE" location="left" />
     <VerticalText text="DEVIS : DV25002 LV RSE" location="right" />
     <main>
-      <Intro />
-      <Presentation />
-      <CalculatorResult />
+      <div class="container">
+        <Intro />
+        <Presentation />
+        <CalculatorResult />
+      </div>
     </main>
 
     <Footer />

@@ -46,7 +46,7 @@ footer {
 }
 .container {
   z-index: 2;
-  max-width: 90%;
+  max-width: var(--container-fw);
 }
 .inner {
   border-top: var(--border);

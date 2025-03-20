@@ -24,7 +24,7 @@ onMounted(() => {
   <section>
     <div class="container">
       <div class="inner">
-        <div class="grid- md:grid-cols-8 gap-md flex">
+        <div class="gap-md flex">
           <div class="md:col-span-2">
             <SideBar />
           </div>
@@ -38,17 +38,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
-/* .container,
-.container > .inner,
-.container > .inner > .grid,
-aside {
-  height: 100%;
-} */
 .flex {
   justify-content: space-around;
-  /* gap: 10em; */
   .md\:col-span-6 {
-    min-width: 56vh;
+    min-width: calc(var(--diagram-radius) * 1.25);
   }
 }
 aside {
